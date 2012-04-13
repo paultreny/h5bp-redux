@@ -39,7 +39,7 @@ Last Updated: April 13, 2012
 
 **More information**
 
-This markdown file is very limited in terms of explaining the full concepts behind those enhancements, you may need to visit the [project's sit][4]e for a more in depth analysis
+This markdown file is very limited in terms of explaining the full concepts behind those enhancements, you may need to visit the [project's site][4] for a more in depth analysis
 
 
   [1]: http://davidhiggins.me/
