@@ -21,8 +21,6 @@ Last Updated: April 13, 2012
 
 - Cabin.css - Cabin helps your projects get going quicker by eliminating the need for you to write basic CSS styles yourself.
 
-- A much richer humans.txt
-
 - Open non-site-specific links / foreign domains in a new window
 
 - Prefix Free. Lets you use only unprefixed CSS properties everywhere. It works behind the scenes, adding the current browser’s prefix to any CSS code, only when it’s needed.
@@ -36,6 +34,16 @@ Last Updated: April 13, 2012
 - PNG Fix. This is a Javascript library that sandwiches PNG image support into IE6 without much fuss.
 
 - Custom Cursors. (cursor.css) Custom CSS-powered cursors you can use in your page. 
+
+- PNG Gauntlet. A tool that optimizes all your PNG files with ease. A (Windows) GUI alternative to PNGCrush.
+
+- Less CSS. LESS extends CSS with dynamic behavior such as variables, mixins, operations and functions.
+
+- H5BP UI. A bootstrap-like framework to get your project off the ground, based on H5BP (Utility)
+
+- Hidden Microformats. Microformatted HTML is buried in the source, and hidden from view with CSS. Microformats give an extra semantic layer on top of a site.
+
+- Shrinkr. A tool that automatically compresses CSS, and JS, via drag and drop. Drop your project's folder into the window, and it minifies everything. (Windows only. Java Required to run) 
 
 **More information**
 
