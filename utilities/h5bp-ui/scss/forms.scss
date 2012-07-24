@@ -1,0 +1,106 @@
+/* =============================================================================
+   Forms normalizations. Based on github.com/necolas/normalize.css
+   ========================================================================== */
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment in IE6/7
+ */
+
+legend {
+    border: 0; // 1
+    *margin-left: -7px; // 2
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Improves appearance and consistency in all browsers
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; // 1
+    margin: 0;
+    vertical-align: baseline; // 2
+    *vertical-align: middle; // 2
+}
+
+/* Match the unchangable FF3+ UA style of line-height on 'input' */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Corrects inability to style clickable 'input' types in iOS
+ * 2. Removes inner spacing in IE7 without affecting normal text inputs
+ */
+
+button,
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button; // 1
+    *overflow: visible;  // 2
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; // 1
+    padding: 0; // 2
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* Removes inner padding that is displayed in S5, Chrome on OS X */
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/* Removes inner padding and border in FF3+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+
+textarea {
+    overflow: auto; // 1
+    vertical-align: top; // 2
+}

@@ -1,0 +1,43 @@
+@mixin clearfix {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin uilist {
+    list-style: none;
+    list-style-image: none; // fix for IE8 when applied to lists within 'nav'
+    padding: 0;
+    margin: 0;
+}
+
+// Appearance
+@mixin appearance($appearance) {
+    -webkit-appearance: $appearance;
+    -moz-appearance: $appearance;
+    appearance: $appearance;
+}
+
+// Box Sizing
+@mixin box-sizing($box) {
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+    box-sizing: $box;
+}
+
+// Transitions
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}

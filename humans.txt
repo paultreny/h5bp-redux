@@ -1,0 +1,86 @@
+Welcome to our humans.txt, young padawan.
+
+One step closer to learning something interesting you are...
+
+Looking for the Asciimation? higg.in/asciimation.txt
+
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
+             :' `.t""--.. '<@.`;_  ',@:` ..--""j.' `;
+                  `:-.._J '-.-'L__ `-- ' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.------.\ ' J           
+                         "-.   "--"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..--  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+
+Humans.txt for David Higgins (www.higg.in) + Edan Hewitt
+
+...The Links Below Contain Even Further Links To Everything We Have Done...
+
+-=[ BLOG ]=-
+r3versin.com/blog | edanhewitt.com/blog
+
+-=[ SITE ]=-
+davidhiggins.me | edanhewitt.com
+
+-=[ EFFIN ]=-
+iwantaneff.in
+
+-=[ CURRENTLY HACKING ON: ]=-
+https://gist.github.com/3006407
+
+================================================================
+
+A Picture of David:
+
+http://isharefil.es/HhUn
+
+A Picture of Edan:
+
+http://isharefil.es/HhKs
+
+================================================================
+
+Shoutouts to anyone mentioned in the source-code of any project mentioned in the sites above.
+
+Long live the Open Web
+Long live JS + CSS + HTML
+Long live Hacking
+
+Submit this humans.txt:
+http://humanstxt.org/Im-human.html
+
+Browse others' humans.txt
+http://humanswhomade.com/
+
+
+                                                        </body>
+                                                        </html6>

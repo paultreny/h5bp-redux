@@ -1,0 +1,244 @@
+/* Based on normalize.css - http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/* Corrects block display not defined in IE6/7/8/9 & FF3 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* Prevents modern browsers from displaying 'audio' without controls */
+audio:not([controls]) {
+  display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Root
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: arial, sans-serif;
+  color: #222222;
+  background: #fff;
+}
+
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+a {
+  color: #105cb6;
+  text-decoration: none;
+}
+
+/* Addresses outline displayed oddly in Chrome */
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improves readability when focused and also mouse hovered in all browsers */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #105cb6;
+  text-decoration: underline;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+h1 {
+  font-size: 2em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: consolas, monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Corrects overflow displayed oddly in IE9 */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Reusable base components
+   ========================================================================== */
+.container {
+  *zoom: 1;
+  max-width: 960px;
+  _width: 960px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}

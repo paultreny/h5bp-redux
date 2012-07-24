@@ -1,0 +1,46 @@
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table {
+    width: 100%;
+    margin: 1.4em 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption{
+    padding: 0.5em 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    background: #f3f3f3;
+}
+
+th,
+td {
+    padding: 0.5em 10px;
+    text-align: left;
+}
+
+tbody tr {
+    border-top: 1px solid #ccc;
+}
+
+tfoot th {
+    border-top: 1px solid #ccc;
+}
+
+/*
+ * Bordered tables
+ */
+
+.table-bordered,
+.table-bordered caption,
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ccc;
+}
+
+.table-bordered caption {
+    border-bottom: 0;
+}

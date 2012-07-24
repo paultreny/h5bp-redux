@@ -1,0 +1,523 @@
+<!doctype html public "lice">
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>H5BP Redux - HTML5 Boilerplate with a few extra things added.</title>
+  
+    <!-- 
+
+    Welcome to the light side of the source, young padawan.
+
+    One step closer to learn something interesting you are...
+
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""--.:__;".-.";: :".-.":__;.--"" _`,
+             :' `.t""--.. '<@.`;_  ',@:` ..--""j.' `;
+                  `:-.._J '-.-'L__ `-- ' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.------.\ ' J           
+                         "-.   "--"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..--  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+-->
+    
+  <meta name="author" content="your name" />
+  <meta name="keywords" content="keywords,go,here,you-can-use-key-phrases-to" />
+  <meta name="description" content="description goes here" />
+  
+  <!-- https://developer.mozilla.org/En/Controlling_DNS_prefetching (FF) -->
+  <!-- http://www.chromium.org/developers/design-documents/dns-prefetching (WEBKIT) -->
+  <!-- Prefetch DNS lookups. Are your visitors going here? Use their idle time wisely and precache the DNS lookups -->
+  <link rel="dns-prefetch" href="//eiremedia.co">
+  <link rel="dns-prefetch" href="//u-n-i.co">
+  <link rel="dns-prefetch" href="//iwantaneff.in">
+  <link rel="dns-prefetch" href="//higg.in">
+  <link rel="dns-prefetch" href="//pinboard.in">
+  <link rel="dns-prefetch" href="//twitter.com">
+  <link rel="dns-prefetch" href="//r3versin.com">
+
+  <!-- Give your visitors more options regarding which RSS Feed they want. There doesn't have to be just ONE RSS Feed ;) -->
+  <link rel="alternate" type="application/rss+xml" title="Edan's Blog RSS Feed" href="http://edanhewitt.com/blog/feed/"/>
+  <link rel="alternate" type="application/rss+xml" title="Edan's Tumblr" href="http://edanhewitt.tumblr.com/rss"/>
+  <link rel="alternate" type="application/rss+xml" title="Edan's Twitter" href="https://twitter.com/statuses/user_timeline/edanhewitt.rss"/>
+  <link rel="alternate" type="application/rss+xml" title="Reverse The Web RSS Feed" href="http://r3versin.com/blog/feed/"/>
+  <link rel="alternate" type="application/rss+xml" title="David Higgins' RSS Feed" href="http://higg.in/rss.xml"/>
+  
+  <!-- Multiple (duplicate) versions of the page? Tell the search engines what version to use: -->
+  <link rel="canonical" href="http://r3versin.com/redux/">
+  <!-- A URL Shortener version of the page's URL goes here. Save your visitors a lot of time, and give them a short link. -->
+  <link rel="shortlink" href="http://goo.gl/2jVCE/">
+  
+  <!-- Blank Favicon, because we're lazy -->
+  <!-- http://davidwalsh.name/blank-favicon -->
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="/>
+  
+  <!-- Fallback favicon LINK for legacy browsers that don't support the DATA URI -->
+  <link rel="shortcut icon" type="image/x-icon" href="http://iwantaneff.in/favicon.ico" />
+  <link rel="shortcut icon" type="image/ico" href="http://iwantaneff.in/favicon.ico" />
+ 
+  <!--
+  Submit this humans.txt:
+  http://humanstxt.org/Im-human.html
+
+  Browse others' humans.txt
+  http://humanswhomade.com/  
+  -->
+  <link rel="humans" href="http://iwantaneff.in/humans.txt" />
+  
+  <!-- Facebook Graphic you want to use when sharing the link as a status: -->
+  <!-- You can use this PNG if you are tired of creating custom graphics for Facebook Open Graph HTML -->
+  <link rel="image_src" href="http://iwantaneff.in/facebook.ping" />
+  
+  <!-- Best if you include these. Let Facebook know what text to show upon sharing the link: -->
+  <!-- https://developers.facebook.com/docs/opengraph/keyconcepts/ -->
+  <!-- You can use this PNG if you are tired of creating custom graphics for Facebook Open Graph HTML -->
+  <meta property="og:image" content="http://iwantaneff.in/facebook.ping" />
+  <meta property="og:title" content="The homepage of David Higgins, a Web Developer based in Dublin" />
+  <meta property="og:url" content="http://davidhiggins.me/" />
+  <meta property="og:site_name" content="The homepage of David Higgins" />
+  
+  <!-- This meta data was taken from bowdenweb.com -->
+  <!-- Thanks to J. Albert Bowden for being so semantic! -->
+  <!-- https://twitter.com/#!/jalbertbowdenii -->
+
+  <meta name="google-site-verification" content="key-goes-here-000" />
+
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta http-equiv="MsThemeCompatible" content="no" />
+  <meta http-equiv="content-style-type" content="text/css" />
+  <meta http-equiv="content-script-type" content="text/javascript" />
+  <meta http-equiv="content-language" content="en-us" />
+
+  <link rel="schema.foaf" href="http://xmlns.com/foaf/0.1/" />
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="http://bowdenweb.com/social/xml/j.albert.bowden.ii.foaf.rdf" />
+  <link rel="contents" href="http://bowdenweb.com/sitemap.html" title="Main Contents" type="text/html" />
+  <link rel="start" href="http://bowdenweb.com/" title="Introduction Page" />
+  <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/" title="Copyright Statement" />
+  <link rel="license" href="http://creativecommons.org/licenses/by/3.0/" title="License Information" />
+  <link rel="author" href="mailto:david.higgins.tech@gmail.com" />
+  <link rel="index" type="text/html" href="http://r3versin.com/redux/index.html" />
+  
+  <!-- Where else are you on the web? -->
+  <link rel="me" href="http://davidhiggins.me/"/>
+  <link rel="me" type="text/html" href="https://gplus.to/higgo/" />
+  <link rel="me" href="https://www.facebook.com/gold.account.needed.to.view" />
+  <link rel="me" href="https://twitter.com/_davidhiggins_" />
+  <link rel="me" href="http://higg.in/" />
+  <link rel="me" href="http://flavors.me/eire/" />
+  <link rel="me" href="http://delicious.com/0x0" />
+  <link rel="me" href="http://pinboard.in/u:em" />
+  <link rel="me" href="http://www.youtube.com/user/00x0000x" />
+  <link rel="meta" type="application/rdf+xml" title="FOAF" href="http://r3versin.com/redux/h5bp.rdf" /> <!-- VCard -->
+ 
+  <!-- Let potential crawlers know where the site's HQ is based. This doesn't have to be your home BTW. Just a company / agency HQ -->
+  <!-- Want to get your company's Coordinates from Google Maps? Open up scratchpad in Firefox and paste this in: -->
+  <!-- void(prompt('',gApplication.getMap().getCenter())); -->
+  <!-- Thank you Lifehacker -->
+  <!-- http://lifehacker.com/267361/google-mapstude?tag=software -->
+  <!-- Area 51, LOL: -->
+  <meta name="ICBM" content="37.235949080010755, -115.80939531326294" />  <!-- georul -->
+  <meta name="geo.position" content="37.235949080010755, -115.80939531326294" /> <!-- georul -->
+  
+  <!-- The Dublin Core® Metadata Initiative -->
+  <link rel="schema.DC" href="http://www.purl.org/dc/elements/1.1/" />
+  <meta name="DC.title" lang="en-us" content="H5BP Redux" />
+  <meta name="DC.creator" content="David Higgins, Edan Hewitt" />
+  <meta name="DC.subject" lang="en-us" content="DCMI; Dublin Core Metadata Initiative; DC META Tags" />
+  <meta name="DC.description" lang="en-us" content="Examples of Dublin Core META Tags." />
+  <meta name="DC.publisher" content="Publisher here" />
+  <meta name="DC.contributor" content="DCMI Dublin Core Metadata Initiative" />
+  <meta name="DC.date" scheme="W3CDTF" content="2008-08-09" />
+  <meta name="DC.type" scheme="DCMIType" content="Text" />
+  <meta name="DC.format" scheme="IMT" content="text/html" />
+  <meta name="DC.identifier" content="/meta-tags/dublin/" />
+  <meta name="DC.source" content="/meta-tags/" />
+  <meta name="DC.language" scheme="RFC1766" content="en-us" />
+  <meta name="DC.relation" content="/meta-tags/" />
+  <meta name="DC.coverage" content="World" />
+  <meta name="DC.rights" content="/legal/terms-of-use.asp" />
+  
+  <!-- Open ID -->
+  <link rel="openid.server" href="http://www.myopenid.com/server" />
+  <link rel="openid.delegate" href="http://yourid.myopenid.com/" />
+  <link rel="openid2.provider" href="http://www.myopenid.com/server" />
+  <link rel="openid2.local_id" href="http://h5bp.myopenid.com/" />
+ 
+  <!-- Custom WebkitScrollbar -->
+  <link href="http://iwantaneff.in/custom.webkit.scrollbar.css" rel="stylesheet" type="text/css">
+  
+  <!-- Cursor.css -->
+  <!-- http://trac.webkit.org/export/37902/trunk/WebCore/manual-tests/cursor.html -->
+  <link href="http://iwantaneff.in/cursor.css" rel="stylesheet" type="text/css">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!--
+  holmes.css is useful for checking the quality of your code (up to W3C HTML5 standards),
+  nitpicking over ensuring markup is valid and semantic and accessility guidelines are met,
+  and when you are tasked to fix up and debug an old, OLD website.
+  It has a simple implementation and a mostly unobtrusive effect on your page.
+  Not recommended for live enviroments.
+
+  Remember too that these are just guidelines: if something is flagged but you can't change it for a good reason,
+  don't worry about it :) Also use a validator if you want to be 100% sure.
+  
+  More Info: http://www.red-root.com/sandbox/holmes/
+  -->
+  <link rel="stylesheet" href="css/holmes.css">
+  
+  <!--
+  Cabin helps your projects get going quicker by eliminating the need for you to write basic CSS styles yourself.
+  More Info: http://cabincss.com/
+  -->
+  <link rel="stylesheet" href="css/cabin.css">
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!--
+  All JavaScript at the bottom, except this Modernizr build.
+  Modernizr enables HTML5 elements & feature detects for optimal performance.
+  Create your own custom Modernizr build: www.modernizr.com/download/
+  -->
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  
+  <link href="css/formalize.css" rel="stylesheet" type="text/css">
+  <link href="css/text.css" rel="stylesheet" type="text/css">
+
+  <!-- Uncomment to use LESSCSS -->
+  <!-- http://lesscss.org/ -->
+  <!-- 
+  <link rel="stylesheet/less" type="text/css" href="less/less.less">
+  <script src="less/less.js" type="text/javascript"></script>
+  -->
+  
+  <style>
+  /* Mother effin brute force CSS reset... */
+  /* Always include after any other CSS */
+  * {
+  resize: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  }
+  </style>
+  
+  </head>
+
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+
+  </header>
+
+<div id="wrapper">
+  <h1>
+    Example of all form elements
+  </h1>
+  <form action="#" method="post" enctype="multipart/form-data" onsubmit="return false">
+    <p>
+      <input type="checkbox" id="test_checkbox_1" name="test_checkbox_1" />
+      <label for="test_checkbox_1">
+        Test checkbox 1
+      </label>
+      &nbsp;
+      &nbsp;
+      <input type="checkbox" id="test_checkbox_2" name="test_checkbox_2" />
+      <label for="test_checkbox_2">
+        Test checkbox 2
+      </label>
+      &nbsp;
+      &nbsp;
+      <input type="checkbox" id="test_checkbox_3" name="test_checkbox_3" />
+      <label for="test_checkbox_3">
+        Test checkbox 3
+      </label>
+    </p>
+    <p>
+      <input type="radio" id="test_radio_1" name="test_radio_group" />
+      <label for="test_radio_1">
+        Test radio 1
+      </label>
+      &nbsp;
+      &nbsp;
+      <input type="radio" id="test_radio_2" name="test_radio_group" />
+      <label for="test_radio_2">
+        Test radio 2
+      </label>
+      &nbsp;
+      &nbsp;
+      <input type="radio" id="test_radio_3" name="test_radio_group" />
+      <label for="test_radio_3">
+        Test radio 3
+      </label>
+    </p>
+    <p>
+      <label for="select_dd">
+        Select drop-down
+      </label>
+      <br />
+      <select id="select_dd" name="select_dd">
+        <optgroup label="Group 1">
+          <option value="1">Some text goes here</option>
+          <option value="2">Another choice could be here</option>
+          <option value="3">Yet another item to be chosen</option>
+        </optgroup>
+        <optgroup label="Group 2">
+          <option value="4">Some text goes here</option>
+          <option value="5">Another choice could be here</option>
+          <option value="6">Yet another item to be chosen</option>
+        </optgroup>
+        <optgroup label="Group 3">
+          <option value="7">Some text goes here</option>
+          <option value="8">Another choice could be here</option>
+          <option value="9">Yet another item to be chosen</option>
+        </optgroup>
+      </select>
+      <input type="text" id="text_inline" name="text_inline" />
+      <input type="button" value="Hello" />
+    </p>
+    <p>
+      <label for="select_multi">
+        Select multiple
+      </label>
+      <br />
+      <select id="select_multi" name="select_multi" multiple="multiple" size="10">
+        <optgroup label="Group 1">
+          <option value="1">Some text goes here</option>
+          <option value="2">Another choice could be here</option>
+          <option value="3">Yet another item to be chosen</option>
+        </optgroup>
+        <optgroup label="Group 2">
+          <option value="4">Some text goes here</option>
+          <option value="5">Another choice could be here</option>
+          <option value="6">Yet another item to be chosen</option>
+        </optgroup>
+        <optgroup label="Group 3">
+          <option value="7">Some text goes here</option>
+          <option value="8">Another choice could be here</option>
+          <option value="9">Yet another item to be chosen</option>
+        </optgroup>
+      </select>
+    </p>
+    <p>
+      <label for="textarea">
+        Textarea
+      </label>
+      <br />
+      <textarea id="textarea" name="textarea" rows="5" placeholder="This is an example of HTML5 placeholder text."></textarea>
+    </p>
+    <table class="horiz">
+      <tr>
+        <td>
+          <label for="url">
+            URL + Autofocus
+          </label>
+          <br />
+          <input type="url" id="url" name="url" value="http://" autofocus="autofocus" />
+        </td>
+        <td>
+          <label for="email">
+            Email
+          </label>
+          <br />
+          <input type="email" id="email" name="email" placeholder="name@example.com" />
+        </td>
+        <td>
+          <label for="password">
+            Password
+          </label>
+          <br />
+          <input type="password" id="password" name="password" placeholder="Alphanumeric123!" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="datetime-local">
+            Datetime local
+          </label>
+          <br />
+          <input type="datetime-local" id="datetime-local" name="datetime-local" />
+        </td>
+        <td>
+          <label for="number">
+            Number
+          </label>
+          <br />
+          <input type="number" id="number" name="number" min="0" max="999" step="1" />
+        </td>
+        <td>
+          <label for="tel">
+            Tel (phone)
+          </label>
+          <br />
+          <input type="tel" id="tel" name="tel" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="datetime">
+            Datetime
+          </label>
+          <br />
+          <input type="datetime" id="datetime" name="datetime" />
+        </td>
+        <td>
+          <label for="date">
+            Date
+          </label>
+          <br />
+          <input type="date" id="date" name="date" />
+        </td>
+        <td>
+          <label for="month">
+            Month
+          </label>
+          <br />
+          <input type="month" id="month" name="month" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="search">
+            Search
+          </label>
+          <br />
+          <input type="search" id="search" name="search" />
+        </td>
+        <td>
+          <label for="range">
+            Range
+          </label>
+          <br />
+          <input type="range" id="range" name="range" />
+        </td>
+        <td>
+          <label for="file">
+            File upload
+          </label>
+          <br />
+          <input type="file" id="file" name="file" />
+        </td>
+      </tr>
+    </table>
+    <p>
+      <input type="submit" value="Input - Submit" />
+      &nbsp;
+      <input type="button" value="Input - Button" />
+      &nbsp;
+      <input type="reset" value="Input - Reset" />
+      &nbsp;
+      <button>Button tag</button>
+    </p>
+  </form>
+</div>
+
+
+  <footer>
+
+  </footer>
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+
+  <script src="js/jquery.formalize.min.js"></script>
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+    $(document).ready(function(){
+
+// Open each link in a new window. Ignore links attached to the current document / host.
+$('a').each(function() {
+   var a = new RegExp('/' + window.location.host + '/');
+   if(!a.test(this.href)) {
+       $(this).click(function(event) {
+           event.preventDefault();
+           event.stopPropagation();
+           window.open(this.href, '_blank');
+       });
+   }
+});
+
+})
+</script>
+
+<!-- hCard // http://microformats.org/wiki/hcard -->
+<div id="hcard-David-Higgins" class="vcard">
+
+<img style="float:left; margin-right:4px" src="http://isharefil.es/HhUn/david-higgins-html5.jpg" alt="photo of David Higgins" class="photo"/>
+
+<a class="url fn n" href="http://higg.in/">
+<span class="given-name">David Higgins</span>
+<span class="additional-name"></span>
+<span class="family-name"></span>
+</a>
+
+<div class="org">Eire Media</div>
+<div class="adr">
+<span class="locality">Dublin</span>
+<span class="country-name">Ireland</span>
+</div>
+<div class="tel">+353862202839</div>
+</div>
+
+  <!-- 
+  Prefix Free lets you use only unprefixed CSS properties everywhere.
+  It works behind the scenes, adding the current browser’s prefix to any CSS code, only when it’s needed. 
+  More Info: http://leaverou.github.com/prefixfree/
+  -->
+  <script src="//raw.github.com/LeaVerou/prefixfree/master/prefixfree.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+.tabs {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+  margin: 0;
+  *zoom: 1;
+}
+.tabs:before, .tabs:after {
+  content: "";
+  display: table;
+}
+.tabs:after {
+  clear: both;
+}
+.tabs li,
+.tabs a {
+  float: left;
+}
+
+.tabs > li {
+  position: relative;
+  margin-bottom: -1px;
+}
+
+.tab-content > .tab-pane,
+.tab-content > div {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}

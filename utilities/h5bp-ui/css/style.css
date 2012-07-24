@@ -1,0 +1,584 @@
+/* Based on normalize.css - http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/* Corrects block display not defined in IE6/7/8/9 & FF3 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+/* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* Prevents modern browsers from displaying 'audio' without controls */
+audio:not([controls]) {
+  display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Root
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: arial, sans-serif;
+  color: #222222;
+  background: #fff;
+}
+
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+a {
+  color: #105cb6;
+  text-decoration: none;
+}
+
+/* Addresses outline displayed oddly in Chrome */
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improves readability when focused and also mouse hovered in all browsers */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #105cb6;
+  text-decoration: underline;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+h1 {
+  font-size: 2em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: consolas, monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul,
+ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Corrects overflow displayed oddly in IE9 */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Reusable base components
+   ========================================================================== */
+.container {
+  *zoom: 1;
+  max-width: 960px;
+  _width: 960px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+/* =============================================================================
+   Forms normalizations. Based on github.com/necolas/normalize.css
+   ========================================================================== */
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment in IE6/7
+ */
+legend {
+  border: 0;
+  *margin-left: -7px;
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Improves appearance and consistency in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* Match the unchangable FF3+ UA style of line-height on 'input' */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Corrects inability to style clickable 'input' types in iOS
+ * 2. Removes inner spacing in IE7 without affecting normal text inputs
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* Removes inner padding that is displayed in S5, Chrome on OS X */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* Removes inner padding and border in FF3+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table {
+  width: 100%;
+  margin: 1.4em 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  padding: 0.5em 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  background: #f3f3f3;
+}
+
+th,
+td {
+  padding: 0.5em 10px;
+  text-align: left;
+}
+
+tbody tr {
+  border-top: 1px solid #ccc;
+}
+
+tfoot th {
+  border-top: 1px solid #ccc;
+}
+
+/*
+ * Bordered tables
+ */
+.table-bordered,
+.table-bordered caption,
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #ccc;
+}
+
+.table-bordered caption {
+  border-bottom: 0;
+}
+
+/*
+ * Media Object
+ * 
+ * Adapted from:
+ *   stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ *   facebook.com
+ */
+/*
+ * Apply clearfix to main object element.
+ * Alternatively, use the .cf helper class
+ */
+.media {
+  *zoom: 1;
+}
+.media:before, .media:after {
+  content: "";
+  display: table;
+}
+.media:after {
+  clear: both;
+}
+
+/*
+ * Primary graphical component (e.g. img, svg, sprite)
+ */
+.media .img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+/*
+ * Optional graphical component
+ */
+.media .opt {
+  float: right;
+  margin: 0 0 0 10px;
+}
+
+/*
+ * 1. Remove excess space below images in .img block
+ * 2. Guard against `img {max-width:100%}` hiding all Media Object images in IE8
+ */
+.media .img img,
+.media .opt img {
+  display: block;
+  max-width: none;
+}
+
+/*
+ * Media object body
+ * 1. Create a new block formatting context (NBFC) in modern browsers
+ * 2. Avoid shrink-wrap behaviour of table-cell
+ * 3. Override for IE6/7
+ * 4. Create a new block formatting context in IE6/7
+ *
+ * N.B. This breaks down in some browsers when images within .body exceed its 
+ * width. The alternative is to use `overflow:hidden` to create the NBFC but 
+ * this is problematic if the object contains elements absolutely positioned 
+ * beyond the confines of its box.
+ */
+.media .body {
+  display: table-cell;
+  width: 10000px;
+  *width: auto;
+  *zoom: 1;
+}
+
+/*
+ * Button Object
+ *
+ * N.B. Assumes no dependencies or use of normalize.css
+ */
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  *overflow: visible;
+  *display: inline;
+  *zoom: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.4em 1em;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #444;
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(#f5f5f5, #f1f1f1);
+  background-image: -moz-linear-gradient(#f5f5f5, #f1f1f1);
+  background-image: -ms-linear-gradient(#f5f5f5, #f1f1f1);
+  background-image: -o-linear-gradient(#f5f5f5, #f1f1f1);
+}
+.btn:hover, .btn:focus, .btn:active {
+  text-decoration: none;
+}
+.btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.btn:hover, .btn:focus, .btn:active {
+  border-color: #c6c6c6;
+  color: #222;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(#f8f8f8, #f1f1f1);
+  background-image: -moz-linear-gradient(#f8f8f8, #f1f1f1);
+  background-image: -ms-linear-gradient(#f8f8f8, #f1f1f1);
+  background-image: -o-linear-gradient(#f8f8f8, #f1f1f1);
+}
+.btn:focus {
+  border-color: #105cb6;
+  outline: 0;
+}
+.btn:active {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #eee;
+  background-image: -webkit-linear-gradient(#eeeeee, #e8e8e8);
+  background-image: -moz-linear-gradient(#eeeeee, #e8e8e8);
+  background-image: -ms-linear-gradient(#eeeeee, #e8e8e8);
+  background-image: -o-linear-gradient(#eeeeee, #e8e8e8);
+}
+.btn.large {
+  font-size: 1.25em;
+}
+
+/*
+ * Button Group
+ */
+/*
+ * Dropdown Object
+ */
+.js-dropdown {
+  position: relative;
+}
+
+.js-dropdown-tray {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.open .js-dropdown-tray {
+  display: block;
+}
+
+.dropdown-tray {
+  max-height: 350px;
+  min-width: 150px;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.tabs {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+  margin: 0;
+  *zoom: 1;
+}
+.tabs:before, .tabs:after {
+  content: "";
+  display: table;
+}
+.tabs:after {
+  clear: both;
+}
+.tabs li,
+.tabs a {
+  float: left;
+}
+
+.tabs > li {
+  position: relative;
+  margin-bottom: -1px;
+}
+
+.tab-content > .tab-pane,
+.tab-content > div {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}

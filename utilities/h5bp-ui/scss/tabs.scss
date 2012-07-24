@@ -1,0 +1,27 @@
+@import "variables";
+@import "mixins";
+
+.tabs {
+    @include uilist;
+    @include clearfix;
+
+    li,
+    a {
+        float: left;
+    }
+}
+
+.tabs > li {
+    position: relative;
+    margin-bottom: -1px;
+}
+
+.tab-content > .tab-pane,
+.tab-content > div {
+    display: none;
+}
+
+.tab-content > .active {
+    display: block;
+}
+
