@@ -10,6 +10,8 @@ Site Source Code: [https://github.com/downloads/higgo/h5bp-redux/site-source-cod
 
 Last Updated: April 13, 2012
 
+[![Foo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/thing/636669/H5BP-Redux)
+
 ----------
 
 
@@ -23,13 +25,13 @@ Last Updated: April 13, 2012
 
 - Open non-site-specific links / foreign domains in a new window
 
-- Prefix Free. Lets you use only unprefixed CSS properties everywhere. It works behind the scenes, adding the current browser’s prefix to any CSS code, only when it’s needed.
+- Prefix Free. Lets you use only unprefixed CSS properties everywhere. It works behind the scenes, adding the current browser?s prefix to any CSS code, only when it?s needed.
 
 - PIE. PIE makes Internet Explorer 6-9 capable of rendering several of the most useful CSS3 decoration features. Note: the path to PIE.htc must be relative to the HTML page, not the css!
 
 - Custom webkit scrollbars.
 
-- Formalize. We've all been there. You are nearly done with a beautiful site design, only to arrive at the task we all dread – form styling. Depending on operating system and browser, default form elements can look okay or horribly disfigured.
+- Formalize. We've all been there. You are nearly done with a beautiful site design, only to arrive at the task we all dread ? form styling. Depending on operating system and browser, default form elements can look okay or horribly disfigured.
 
 - PNG Fix. This is a Javascript library that sandwiches PNG image support into IE6 without much fuss.
 
@@ -50,7 +52,7 @@ Last Updated: April 13, 2012
 This markdown file is very limited in terms of explaining the full concepts behind those enhancements, you may need to visit the [project's site][4] for a more in depth analysis
 
 
-  [1]: http://davidhiggins.me/
+  [1]: http://higg.im/
   [2]: http://r3versin.com/redux/
   [3]: https://github.com/downloads/higgo/h5bp-redux/site-source-code.zip
   [4]: http://r3versin.com/redux
