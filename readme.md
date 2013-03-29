@@ -4,9 +4,7 @@
 
 Author: [David Higgins][1]
 
-Website: [http://r3versin.com/redux/][2]
-
-Site Source Code: [https://github.com/downloads/higgo/h5bp-redux/site-source-code.zip][3]
+Website: [http://iwantaneff.in/projects/redux/][2]
 
 Last Updated: April 13, 2012
 
@@ -53,6 +51,5 @@ This markdown file is very limited in terms of explaining the full concepts behi
 
 
   [1]: http://higg.im/
-  [2]: http://r3versin.com/redux/
-  [3]: https://github.com/downloads/higgo/h5bp-redux/site-source-code.zip
-  [4]: http://r3versin.com/redux
+  [2]: http://iwantaneff.in/projects/redux/
+  [4]: http://iwantaneff.in/projects/redux/
