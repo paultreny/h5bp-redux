@@ -2,8 +2,6 @@ Welcome to our humans.txt, young padawan.
 
 One step closer to learning something interesting you are...
 
-Looking for the Asciimation? higg.in/asciimation.txt
-
                                ____                  
                             _.' :  `._               
                         .-.'`.  ;   .'`.-.           
@@ -41,31 +39,17 @@ Looking for the Asciimation? higg.in/asciimation.txt
                             "-.t-._:'                
 
 
-Humans.txt for David Higgins (www.higg.in) + Edan Hewitt
 
 ...The Links Below Contain Even Further Links To Everything We Have Done...
 
--=[ BLOG ]=-
-r3versin.com/blog | edanhewitt.com/blog
-
--=[ SITE ]=-
-davidhiggins.me | edanhewitt.com
-
 -=[ EFFIN ]=-
 iwantaneff.in
-
--=[ CURRENTLY HACKING ON: ]=-
-https://gist.github.com/3006407
 
 ================================================================
 
 A Picture of David:
 
 http://isharefil.es/HhUn
-
-A Picture of Edan:
-
-http://isharefil.es/HhKs
 
 ================================================================
 
